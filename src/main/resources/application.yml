@@ -1,0 +1,11 @@
+server:
+  port: 8091
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-efq3tqaovlb4k7aq.us.auth0.com/
+          audiences: https://dev-efq3tqaovlb4k7aq.us.auth0.com/api/v2/
+
