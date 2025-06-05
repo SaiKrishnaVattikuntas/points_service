@@ -1,6 +1,3 @@
-server:
-  port: 8091
-
 spring:
   security:
     oauth2:
@@ -8,4 +5,19 @@ spring:
         jwt:
           issuer-uri: https://dev-efq3tqaovlb4k7aq.us.auth0.com/
           audiences: https://dev-efq3tqaovlb4k7aq.us.auth0.com/api/v2/
+
+server:
+  port: 8091
+
+adapter:
+  userServiceURL: http://localhost:8092
+  tokenAccessURL: https://dev-efq3tqaovlb4k7aq.us.auth0.com/oauth/token
+
+tokenAccess:
+  clientId: iOzI1ve5V9MkS5aOSmVDZ9XTLxuhH2ya
+  clientSecret: S7Rg7S7Y9lQ-_TXZigabJ1dTOxGZD2iLS8zfcjHT68LrUP5kmTkfDZfxlPeqxgK-
+  audience: https://dev-efq3tqaovlb4k7aq.us.auth0.com/api/v2/
+  grantType: client_credentials
+
+
 

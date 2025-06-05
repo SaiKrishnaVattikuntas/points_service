@@ -25,8 +25,9 @@ dependencies {
             'org.springframework.boot:spring-boot-starter-data-jpa',
             'org.springframework.cloud:spring-cloud-starter-openfeign:4.2.1',
             'org.springframework.boot:spring-boot-starter-security',
-            'org.springframework.boot:spring-boot-starter-oauth2-resource-server',
-            'org.projectlombok:lombok:1.18.38')
+            'org.springframework.boot:spring-boot-starter-oauth2-resource-server')
+    compileOnly 'org.projectlombok:lombok:1.18.38'
+    annotationProcessor 'org.projectlombok:lombok:1.18.38'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
