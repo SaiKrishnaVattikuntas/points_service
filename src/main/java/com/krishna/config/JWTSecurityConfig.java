@@ -15,7 +15,7 @@ public class JWTSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
 
         httpSecurity.authorizeHttpRequests(auth -> auth.requestMatchers("/health/**").permitAll()
-                .requestMatchers("/v1/points").hasAuthority("SCOPE_read:users").anyRequest().authenticated()).oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
+                .requestMatchers("/v1/points").hasAuthority("SCOPE_read:users").anyRequest().authenticated()).oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> {}));
         return httpSecurity.build();
     }
 }
