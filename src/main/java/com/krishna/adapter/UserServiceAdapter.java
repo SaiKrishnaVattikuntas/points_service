@@ -1,6 +1,5 @@
 package com.krishna.adapter;
 
-import org.apache.tomcat.util.http.parser.Authorization;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
